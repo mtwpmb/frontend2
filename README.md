@@ -1,1 +1,1 @@
-# frontend2
+GitHub Pages: https://mtwpmb.github.io/frontend2/
