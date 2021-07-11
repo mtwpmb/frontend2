@@ -1,0 +1,58 @@
+
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	background: #f1f1f1;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	color: rgba(31, 32, 65, 0.75);
+}
+
+body span, button, input {
+	font-family: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	color: inherit;
+}
+
+.page-area {
+	position: relative;
+	margin: auto;
+	max-width: 1440px;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+}
+
+.page-area .content-area, .topbar-area, .footer-area, .copyright-area {
+	position: relative;
+	width: 100%;
+	background-color: white;
+	box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+}
+
+.topbar-area {
+	height: 70px;
+}
+
+.footer-area {
+	height: 368px;
+}
+
+.copyright-area {
+	height: 70px;
+	border-top: 1px solid rgb(221, 221, 227);
+}
+
+.image-main {
+	width: 100%;
+	height: auto;
+}

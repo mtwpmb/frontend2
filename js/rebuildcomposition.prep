@@ -1,0 +1,15 @@
+
+<!--prep include incfile("../inc/header/header.js")  prep-->
+
+<!--prep include incfile("../inc/footer/footer.js")  prep-->
+
+<!--prep include incfile("../inc/copyright/copyright.js")  prep-->
+
+function RebuildComposition() {
+	var pagewidth = getPageWidth();
+	RebuildCompositionHeader(pagewidth);
+	RebuildCompositionFooter(pagewidth);
+	RebuildCompositionCopyright(pagewidth);
+}
+
+addEvent(window, 'resize', RebuildComposition);

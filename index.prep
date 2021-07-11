@@ -1,0 +1,30 @@
+<!--prep output index.html  prep-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>MetaLamp. Задание 2.</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="fonts/awesome/css/all.css">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body topmargin="0" leftmargin="0">
+<div class="page-area" id="page-area">
+	<div class="topbar-area" id="topbar-area">
+		<!--prep include incfile("inc/header/index.php")  prep-->
+	</div>
+	<div class="content-area" id="content-area">
+		<img class="image-main" src="images/main.png">
+	</div>
+	<div class="footer-area" id="footer-area">
+		<!--prep include incfile("inc/footer/index.php")  prep-->
+	</div>
+	<div class="copyright-area copyright-area-tworows" id="copyright-area">
+		<!--prep include incfile("inc/copyright/index.php")  prep-->
+	</div>
+</div>
+</body>
+</html>

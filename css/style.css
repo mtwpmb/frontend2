@@ -1,0 +1,603 @@
+/* @font-face {
+	font-family: 'Montserrat';
+	src: url(../fonts/montserrat/Montserrat-Regular.eot);
+	src: local('☺'), url(../fonts/montserrat/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2'),
+									url(../fonts/montserrat/Montserrat-Regular.woff) format('woff'), 
+									url(../fonts/montserrat/Montserrat-Regular.ttf) format('truetype'), 
+									url(../fonts/montserrat/Montserrat-Regular.svg) format('svg');
+	font-weight: normal;
+	font-style: normal;
+} */
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url(../fonts/montserratv15/montserrat-v15-latin_cyrillic-regular.eot);
+	src: local('☺'), url(../fonts/montserratv15/montserrat-v15-latin_cyrillic-regular.woff2) format('woff2'),
+									url(../fonts/montserratv15/montserrat-v15-latin_cyrillic-regular.woff) format('woff'), 
+									url(../fonts/montserratv15/montserrat-v15-latin_cyrillic-regular.ttf) format('truetype'), 
+									url(../fonts/montserratv15/montserrat-v15-latin_cyrillic-regular.svg) format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url(../fonts/montserrat/Montserrat-Bold.eot);
+	src: local('☺'), url(../fonts/montserrat/Montserrat-Bold.woff2) format('woff2'),
+									url(../fonts/montserrat/Montserrat-Bold.woff) format('woff'), 
+									url(../fonts/montserrat/Montserrat-Bold.ttf) format('truetype'), 
+									url(../fonts/montserrat/Montserrat-Bold.svg) format('svg');
+	font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/materialicons/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(../fonts/materialicons/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2'),
+    url(../fonts/materialicons/MaterialIcons-Regular.woff) format('woff'),
+    url(../fonts/materialicons/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	background: #f1f1f1;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	color: rgba(31, 32, 65, 0.75);
+}
+
+body span, button, input {
+	font-family: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	color: inherit;
+}
+
+.page-area {
+	position: relative;
+	margin: auto;
+	max-width: 1440px;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+}
+
+.page-area .content-area, .topbar-area, .footer-area, .copyright-area {
+	position: relative;
+	width: 100%;
+	background-color: white;
+	box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+}
+
+.topbar-area {
+	height: 70px;
+}
+
+.footer-area {
+	height: 368px;
+}
+
+.copyright-area {
+	height: 70px;
+	border-top: 1px solid rgb(221, 221, 227);
+}
+
+.image-main {
+	width: 100%;
+	height: auto;
+}
+
+
+/* header style */
+
+.topbar-menu {
+	position: absolute;
+	left: 36.80%;
+	top: 27px;
+}
+
+.topbar-menu span {
+	position: absolute;
+	top: 0;
+}
+
+.menu-about {
+	left: 0;
+	font-weight: bold;
+	width:43px;
+}
+
+.menu-services {
+	left: 63px; 
+}
+
+.menu-vacancies {
+	left: 157px;
+}
+
+.menu-news {
+	left: 249px;
+}
+
+.menu-agreements  {
+	left: 331px; 
+}
+
+.menu-login  {
+	position: absolute;
+	left: 468px;
+	top: -8px;
+}
+
+.panel-user-name {
+	display: none;
+	position: absolute;
+	left: 467px;
+	top: -6px;
+	height: 30px;
+	border-left: 1px solid rgba(31, 32, 65, 0.1);
+}
+
+.user-name {
+	position: absolute;
+	left: 21px;
+	width: 110px;
+	margin-top: 6px;
+}
+
+.button-border {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 85px;
+}
+
+.button-gradient {
+	position: absolute;
+	left: 106px;
+	top: -1px;
+	width: 196px;
+}
+
+.image-logo {
+	position: absolute;
+	width: 105.69px;
+	top: 15px;
+	left: 9.7%;
+}
+
+
+/* user login */
+.topbar-menu-login .topbar-menu {
+	left: 49.44%;
+}
+
+.topbar-menu-login .menu-login {
+	display: none;
+}
+
+.topbar-menu-login .panel-user-name {
+	display: block;
+}
+
+
+/* topbar-menu-tworows */
+.topbar-menu-tworows {
+	height: 110px;
+}
+
+.topbar-menu-tworows .topbar-menu {
+	left: calc(100% - 470px);
+}
+
+.topbar-menu-tworows .menu-login {
+	left: 142px;
+	top: 30px;
+}
+
+.topbar-menu-tworows .panel-user-name {
+	left: 0;
+	top: 30px;
+}
+
+/* topbar-menu-threerows */
+.topbar-menu-threerows {
+	height: 130px;
+}
+
+.topbar-menu-threerows .topbar-menu {
+	left: calc(100% - 250px);
+}
+
+.topbar-menu-threerows .menu-news {
+	left: 0;
+	top: 25px;
+}
+
+.topbar-menu-threerows .menu-agreements {
+	left: 82px;
+	top: 25px;
+}
+
+.topbar-menu-threerows .menu-login {
+	left: -70px;
+	top: 55px;
+}
+
+.topbar-menu-threerows .panel-user-name {
+	left: 0;
+	top: 49px;
+}
+
+.topbar-menu-threerows .image-logo {
+	left: 4%;
+}
+
+/* topbar-menu-fourrows */
+.topbar-menu-fourrows {
+	height: 175px;
+}
+
+.topbar-menu-fourrows .topbar-menu {
+	left: calc(50% - 110px);
+	top: 70px;
+}
+
+.topbar-menu-fourrows .menu-news {
+	left: 0;
+	top: 25px;
+}
+
+.topbar-menu-fourrows .menu-agreements {
+	left: 82px;
+	top: 25px;
+}
+
+.topbar-menu-fourrows .menu-login {
+	left: -35px;
+	top: 56px;
+}
+
+.topbar-menu-fourrows .panel-user-name {
+	left: 0;
+	top: 46px;
+}
+
+.topbar-menu-fourrows .image-logo {
+	left: calc(50% - 55px);
+}
+
+
+
+.footer-area * {
+	padding: 0;
+	margin: 0;
+}
+
+.footer-area div, ul {
+	position: absolute;
+	top: 0;
+}
+
+.footer-area .footer-logo {
+	left: 9.72%;
+	top: 96px;
+}
+
+.footer-area .footer-menu {
+	left: 30.56%;
+	top: 99px;
+}
+
+.footer-area ul {
+	list-style-type: none;
+}
+
+.footer-area li {
+	margin-bottom: 21px;
+	width: 100%
+}
+
+.footer-logo-image {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.footer-logo-text {
+	position: absolute;
+	left: 0;
+	top: 57px;
+	width: 260px;
+	line-height: 24px;
+}
+
+.footer-menu-panel1 {
+	left: 0;
+}
+
+.footer-menu-navigation {
+	left: 0;
+	width: 168px;
+}
+
+.footer-menu-about {
+	left: 200px;
+	width: 108px;
+}
+
+.footer-menu-panel2 {
+	left: 400px;
+}
+
+.footer-menu-support {
+	left: 0;
+	width: 190px;
+}
+
+.footer-menu-subs {
+	left: 200px;
+	width: 260px;
+}
+
+.footer-area .footer-email {
+	left: 200px;
+	top: 105px;
+	width: 260px;
+	height: 44px;
+}
+
+.footer-email:after {
+	content: "\e5c8";
+	position: absolute;
+	top: 10px;
+	width: 24px;
+	height: 24px;
+	right: 10px;
+	font-family: Material Icons;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 24px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: rgba(31, 32, 65, 0.5);
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-email-text {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #FFFFFF;
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	box-sizing: border-box;
+	border-radius: 4px;
+	line-height: 24px;
+	padding: 12px;
+	padding-left: 15px;
+	padding-right: 40px;
+}
+
+
+
+
+.footer-area-tworows {
+	height: 620px;
+}
+
+.footer-area-tworows .footer-menu {
+	left: calc(100% - 500px);
+}
+
+.footer-area-tworows .footer-menu-panel2 {
+	left: 0;
+	top: 200px;
+}
+
+
+
+.footer-area-threerows {
+	height: 680px;
+}
+
+.footer-area-threerows .footer-menu {
+	top: 270px;
+	left: 9.72%;
+}
+
+.footer-area-threerows .footer-menu-panel2 {
+	left: 0;
+	top: 200px;
+}
+
+.copyright-text {
+	position: absolute;
+	left: 9.65%;
+	top: 27px;
+	width: 400px;
+}
+
+.copyright-social {
+	position: absolute;
+	left: 82.43%;
+	top: 24px;
+	width: 120px;
+}
+
+.copyright-social div {
+	font-family: "Font Awesome 5 Brands";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 23px;
+}
+
+.copyright-social div:before {
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.copyright-icon-twitter {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.copyright-icon-facebook {
+	position: absolute;
+	left: 45px;
+	top: 0;
+}
+
+.copyright-icon-instagram {
+	position: absolute;
+	left: 89px;
+	top: 0;
+}
+
+
+.copyright-area-tworows {
+	height: 80px;
+}
+
+.copyright-area-tworows .copyright-text {
+	top: 15px;
+	left: calc(50% - 188px);
+}
+
+.copyright-area-tworows .copyright-social {
+	top: 40px;
+	left: calc(50% - 60px);
+}
+
+.copyright-area-threerows {
+	height: 100px;
+}
+
+.copyright-area-threerows .copyright-text {
+	width: 210px;
+	left: calc(50% - 105px);
+	top: 15px;
+	text-align: center;
+}
+
+.copyright-area-threerows .copyright-social {
+	top: 60px;
+	left: calc(50% - 60px);
+}
+/* buttons */
+.button-border {
+	border: solid 1px white;
+	text-align: center;
+	background: white;
+	border-radius: 22px;
+	z-index: 1;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 15px;
+	text-transform: uppercase;
+	color: #BC9CFF;
+	height: 32px;
+}
+
+.button-border:after {
+		content: ' ';
+		position: absolute;
+    top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		border-radius: 22px; /* !importanté */
+		background: white;
+		z-index: -1;
+}
+
+.button-border:before {
+		content: ' ';
+		position: absolute;
+    top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		border-radius: 22px; /* !importanté */
+		background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+		margin: -2px;
+		z-index: -1;
+}
+
+.button-gradient {
+	border: none;
+	text-align: center;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	border-radius: 22px;
+	z-index: 1;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 15px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	height: 34px;
+}
+
+/* Arrows */
+
+.arrow-down {
+	font-family: Material Icons;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 20px;
+	/* identical to box height */
+	display: flex;
+	text-align: center;
+	/* Dark 50% */
+	color: rgba(31, 32, 65, 0.5);
+}
+
+.arrow-down:before {
+	content: '/e5cf';    /* expand_more */
+	position: absolute;
+	left: 0;
+  top: -1px;
+	width: 24px;
+	height: 23px;
+}
+
+.dropdown-submenu:before {
+	content: "\e5cf";
+	position: absolute;
+	top: -1px;
+	width: 24px;
+	height: 23px;
+	right: -23px;
+	font-family: Material Icons;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 20px;
+	text-align: center;
+	color: rgba(31, 32, 65, 0.5);
+}

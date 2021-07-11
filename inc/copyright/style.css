@@ -1,0 +1,77 @@
+
+.copyright-text {
+	position: absolute;
+	left: 9.65%;
+	top: 27px;
+	width: 400px;
+}
+
+.copyright-social {
+	position: absolute;
+	left: 82.43%;
+	top: 24px;
+	width: 120px;
+}
+
+.copyright-social div {
+	font-family: "Font Awesome 5 Brands";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 23px;
+}
+
+.copyright-social div:before {
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.copyright-icon-twitter {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.copyright-icon-facebook {
+	position: absolute;
+	left: 45px;
+	top: 0;
+}
+
+.copyright-icon-instagram {
+	position: absolute;
+	left: 89px;
+	top: 0;
+}
+
+
+.copyright-area-tworows {
+	height: 80px;
+}
+
+.copyright-area-tworows .copyright-text {
+	top: 15px;
+	left: calc(50% - 188px);
+}
+
+.copyright-area-tworows .copyright-social {
+	top: 40px;
+	left: calc(50% - 60px);
+}
+
+.copyright-area-threerows {
+	height: 100px;
+}
+
+.copyright-area-threerows .copyright-text {
+	width: 210px;
+	left: calc(50% - 105px);
+	top: 15px;
+	text-align: center;
+}
+
+.copyright-area-threerows .copyright-social {
+	top: 60px;
+	left: calc(50% - 60px);
+}
