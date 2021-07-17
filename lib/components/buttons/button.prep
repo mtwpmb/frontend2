@@ -1,0 +1,23 @@
+<!--prep name="button-component"
+
+
+@button-gradient-component($extclass, $caption, $extparams){
+<div class="button-gradient $extclass;" $extparams;>
+<div class="button-gradient-caption">$caption;</div>
+</div>
+}
+
+@button-border-component($extclass, $caption, $extparams){
+<div class="button-gradient $extclass;" $extparams;>
+<div class="button-gradient-caption button-border-caption">$caption;</div>
+</div>
+}
+
+@button-gradient-arrow-component($extclass, $caption, $arrow, $extparams){
+<div class="button-container $extclass;" $extparams;>
+	<button class="button-gradient">$caption;</button>
+	<span class="arrow-base"><a href="#">$arrow;</a></span>
+</div>
+}
+
+prep-->

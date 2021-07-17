@@ -1,0 +1,8 @@
+<div id="form-enter" class="form-enter">
+	<span class="form-enter-caption">Войти</span>
+	<!--prep @textbox-component("form-enter-email", "Email", "") prep-->
+	<!--prep @password-component("form-enter-pass", "Пароль", "") prep-->
+	<!--prep @button-gradient-component("form-enter-button arrow-forward", "Войти", "") prep-->
+	<span class="form-enter-question">Нет аккаунта на Toxin?</span>
+	<!--prep @button-border-component("form-register-button", "создать", "onClick=ShowFormReg()") prep-->
+</div>

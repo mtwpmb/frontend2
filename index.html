@@ -20,8 +20,12 @@
 	<span class="menu-news">Новости</span>
 	<span class="menu-agreements dropdown-submenu">Соглашения</span>
 	<div class="menu-login">
-		<button class="button-border" onClick="UserLogin()">войти</button>
-		<button class="button-gradient" onClick="UserLogin()">зарегистрироваться</button>
+		<div class="button-gradient button-border-position" onClick=ShowFormEnter()>
+<div class="button-gradient-caption button-border-caption">войти</div>
+</div>
+		<div class="button-gradient button-gradient-position" onClick=ShowFormReg()>
+<div class="button-gradient-caption">зарегистрироваться</div>
+</div>
 	</div>
 	<div class="panel-user-name" onClick="UserLogout()">
 		<span class="user-name">Юлий Цезарь</span>
@@ -30,7 +34,10 @@
 <script>RebuildCompositionHeader()</script>
 	</div>
 	<div class="content-area" id="content-area">
-		<img class="image-main" src="images/main.png">
+		<div class="home-area">
+	<img class="home-image" src="images/main.png">
+	<span class="home-title">Лучшие номера для вашей работы,<br>отдыха и просто вдохновения</span>
+</div>
 	</div>
 	<div class="footer-area" id="footer-area">
 		<div class="footer-logo">
@@ -72,7 +79,7 @@
 </div>
 <script>RebuildCompositionFooter()</script>
 	</div>
-	<div class="copyright-area copyright-area-tworows" id="copyright-area">
+	<div class="copyright-area" id="copyright-area">
 		﻿<div class="copyright-title">
 	<span class="copyright-text">Copyright © 2018 Toxin отель. Все права защищены.</span>
 </div>
@@ -83,6 +90,52 @@
 </div>
 <script>RebuildCompositionCopyright()</script>
 	</div>
+	<div id="form-enter" class="form-enter">
+	<span class="form-enter-caption">Войти</span>
+	<input type="text" placeholder="Email" class="text-box form-enter-email" >
+	<input type="password" placeholder="Пароль" class="text-box form-enter-pass" >
+	<div class="button-gradient form-enter-button arrow-forward" >
+<div class="button-gradient-caption">Войти</div>
+</div>
+	<span class="form-enter-question">Нет аккаунта на Toxin?</span>
+	<div class="button-gradient form-register-button" onClick=ShowFormReg()>
+<div class="button-gradient-caption button-border-caption">создать</div>
+</div>
+</div>
+	<div id="form-reg" class="form-reg">
+	<span class="form-reg-caption">Регистрация аккаунта</span>
+	<input type="text" placeholder="Имя" class="text-box form-reg-name" >
+	<input type="text" placeholder="Фамилия" class="text-box form-reg-surname" >
+	<div class="form-reg-gender-selection">
+		<div class="radio-button rb-checked form-reg-rb-male" onClick="rbClick(this)" >
+<div class="rb-cyrcle">
+	<div class="rb-point"></div>
+</div>
+<div class="rb-caption">Мужчина</div>
+</div>
+		<div class="radio-button form-reg-rb-female" onClick="rbClick(this)" >
+<div class="rb-cyrcle">
+	<div class="rb-point"></div>
+</div>
+<div class="rb-caption">Женщина</div>
+</div>
+	</div>
+	<span class="form-reg-date-birth-caption">дата рождения</span>
+	<input type="text" placeholder="ДД.ММ.ГГГГ" class="text-box form-reg-date-birth" >
+	<span class="form-reg-login-caption">данные для входа в сервис</span>
+	<input type="text" placeholder="Email" class="text-box form-reg-login-email" >
+	<input type="text" placeholder="Пароль" class="text-box form-reg-login-pass" >
+	<div class="toggle-component toggle-component-off form-reg-toggle" >
+	<div class="toggle-switch" onMouseDown="tglMouseDown(this)"></div>
+</div>
+	<div class="button-gradient form-reg-button-payment arrow-forward" >
+<div class="button-gradient-caption">перейти к оплате</div>
+</div>
+	<span class="form-reg-question">Уже есть аккаунт на Toxin</span>
+	<div class="button-gradient form-reg-button-login" onClick=ShowFormEnter()>
+<div class="button-gradient-caption button-border-caption">войти</div>
+</div>
+</div>
 </div>
 </body>
 </html>

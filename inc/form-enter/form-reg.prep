@@ -1,0 +1,18 @@
+<div id="form-reg" class="form-reg">
+	<span class="form-reg-caption">Регистрация аккаунта</span>
+	<!--prep @textbox-component("form-reg-name", "Имя", "") prep-->
+	<!--prep @textbox-component("form-reg-surname", "Фамилия", "") prep-->
+	<div class="form-reg-gender-selection">
+		<!--prep @radio-button-component("rb-checked form-reg-rb-male", "", "Мужчина") prep-->
+		<!--prep @radio-button-component("form-reg-rb-female", "", "Женщина") prep-->
+	</div>
+	<span class="form-reg-date-birth-caption">дата рождения</span>
+	<!--prep @textbox-component("form-reg-date-birth", "ДД.ММ.ГГГГ", "") prep-->
+	<span class="form-reg-login-caption">данные для входа в сервис</span>
+	<!--prep @textbox-component("form-reg-login-email", "Email", "") prep-->
+	<!--prep @textbox-component("form-reg-login-pass", "Пароль", "") prep-->
+	<!--prep @toggle-component("toggle-component-off form-reg-toggle", "") prep-->
+	<!--prep @button-gradient-component("form-reg-button-payment arrow-forward", "перейти к оплате", "") prep-->
+	<span class="form-reg-question">Уже есть аккаунт на Toxin</span>
+	<!--prep @button-border-component("form-reg-button-login", "войти", "onClick=ShowFormEnter()") prep-->
+</div>

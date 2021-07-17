@@ -1,0 +1,22 @@
+
+<!--prep name="components-css"
+
+$components-base-height: 44px;
+$components-base-gradient: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+
+/* Arrows style */
+#include("name", "arrows-style")
+
+/* Buttons style */
+#include("name", "buttons-style")
+
+/* Text style */
+#include("name", "textbox-style")
+
+/* Radio button */
+#include("name", "radio-style")
+
+/* Toggle */
+#include("name", "toggle-style")
+
+prep-->

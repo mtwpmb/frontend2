@@ -1,4 +1,3 @@
-
 function addEvent(obj, type, fn) {
 	try {
 		if (obj.addEventListener) {
@@ -24,8 +23,6 @@ function getPageWidth() {
 		return ca.clientWidth;
 	}
 }
-
-
 
 var topbar = null;
 var login = false;
@@ -68,8 +65,6 @@ function UserLogout() {
 	RebuildCompositionHeader();
 }
 
-
-
 var footer = null;
 
 function RebuildCompositionFooter(pagewidth = 0) {
@@ -85,7 +80,6 @@ function RebuildCompositionFooter(pagewidth = 0) {
 	}
 	if (footer.className !== cls) {footer.className = cls;}
 }
-
 
 var copyright = null;
 
@@ -111,3 +105,54 @@ function RebuildComposition() {
 }
 
 addEvent(window, 'resize', RebuildComposition);
+
+function rbClick(rb) {
+	var cont = rb.parentNode;
+	if (cont.cntClick == undefined) {cont.cntClick = 0;}
+	cont.cntClick++;
+	rb.cntClick = cont.cntClick;
+	var elem = cont.getElementsByClassName("radio-button");
+	for (var i = 0; i < elem.length; i++) {
+		if (elem[i].cntClick == undefined) {elem[i].cntClick = 0;}
+		var baseclass = elem[i].className.replace("rb-checked", "");
+		baseclass = baseclass.trim();
+		baseclass = baseclass.replace("  ", " ");
+		if (elem[i].cntClick < rb.cntClick) {
+			elem[i].className = baseclass;
+		} else {
+			elem[i].className = baseclass + " rb-checked";
+		}
+	}
+}
+
+function tglMouseDown(tgl) {
+	var p = tgl.parentNode
+	if (p.flMouseDown == undefined) {
+		addEvent(p, 'mousemove', tglMouseMove);
+	}
+	p.flMouseDown = true;
+}
+
+function tglMouseMove(e) {
+	var obj = e.target || e.srcElement;
+	if (obj.flMouseDown == undefined || !obj.flMouseDown) {return;}
+	var rect = obj.getBoundingClientRect();
+	if (e.clientX > rect.left + rect.width * 0.7 && obj.className.indexOf("toggle-component-off") > 0) {
+		obj.flMouseDown = false;
+		obj.className = obj.className.replace("toggle-component-off", "toggle-component-on");
+	}
+	if (e.clientX < rect.left + rect.width * 0.3 && obj.className.indexOf("toggle-component-on") > 0) {
+		obj.flMouseDown = false;
+		obj.className = obj.className.replace("toggle-component-on", "toggle-component-off");
+	}
+}
+
+function ShowFormEnter() {
+	document.getElementById("form-reg").style.display = "none";
+	document.getElementById("form-enter").style.display = "block";
+}
+
+function ShowFormReg() {
+	document.getElementById("form-enter").style.display = "none";
+	document.getElementById("form-reg").style.display = "block";
+}

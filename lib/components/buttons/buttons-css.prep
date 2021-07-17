@@ -1,0 +1,49 @@
+<!--prep name="buttons-style"
+
+$button-gradient-down: linear-gradient(180deg, #8BA4F9 100%, #BC9CFF 0%);
+$button-border-radius: 22px;
+$button-border-size: 2px;
+$button-height-base: 40px;
+
+.button-container {
+	height: $components-base-height ;
+}
+
+.button-gradient {
+	display: table;
+	position: absolute;
+	height: $button-height-base ;
+	border: none;
+	background: $components-base-gradient ;
+	border-radius: $button-border-radius ;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 15px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	padding: $button-border-size ;
+}
+
+.button-gradient .button-gradient-caption {
+	display: table-cell;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.button-gradient .button-border-caption {
+	background: white;
+	border-radius: $button-border-radius ;
+	color: #BC9CFF;
+}
+
+.button-gradient:hover {
+	opacity: 0.5;
+}
+
+.button-gradient:active {
+	background: $button-gradient-down ;
+}
+
+prep-->

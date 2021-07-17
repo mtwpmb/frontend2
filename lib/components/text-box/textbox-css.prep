@@ -1,0 +1,14 @@
+<!--prep name="textbox-style"
+
+.text-box {
+	background: #FFFFFF;
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	box-sizing: border-box;
+	border-radius: 4px;
+	height: $components-base-height ;
+	padding: 12px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+prep-->

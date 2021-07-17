@@ -1,0 +1,43 @@
+<!--prep name="arrows-style"
+
+$arrow-forward: "\e5c8";
+
+.arrow-base {
+	position: absolute;
+	top: calc(50% - 12px);
+	width: 24px;
+	height: 24px;
+	right: 10px;
+	font-family: Material Icons;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	color: white;
+	line-height: 24px;
+	/* display: flex;
+	align-items: center;
+	text-align: center;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+.arrow-base a {
+	text-decoration: none;
+	color: white;
+}
+
+.arrow-forward:before {
+	content: "\e5c8";
+	position: absolute;
+	top: calc(50% - 9px);
+	width: 24px;
+	height: 24px;
+	right: 10px;
+	font-family: Material Icons;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	color: white;
+}
+
+prep-->

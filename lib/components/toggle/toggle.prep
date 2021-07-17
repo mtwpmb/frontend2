@@ -1,0 +1,9 @@
+<!--prep name="toggle-component"
+
+@toggle-component($extclass, $extparams){
+<div class="toggle-component $extclass;" $extparams;>
+	<div class="toggle-switch" onMouseDown="tglMouseDown(this)"></div>
+</div>
+}
+
+prep-->

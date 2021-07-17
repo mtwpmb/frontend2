@@ -14,17 +14,19 @@
 <body topmargin="0" leftmargin="0">
 <div class="page-area" id="page-area">
 	<div class="topbar-area" id="topbar-area">
-		<!--prep include incfile("inc/header/index.php")  prep-->
+		<!--prep #include("file", "inc/header/header.prep") prep-->
 	</div>
 	<div class="content-area" id="content-area">
-		<img class="image-main" src="images/main.png">
+		<!--prep #include("file", "inc/home/home.prep") prep-->
 	</div>
 	<div class="footer-area" id="footer-area">
-		<!--prep include incfile("inc/footer/index.php")  prep-->
+		<!--prep #include("file", "inc/footer/index.php") prep-->
 	</div>
-	<div class="copyright-area copyright-area-tworows" id="copyright-area">
-		<!--prep include incfile("inc/copyright/index.php")  prep-->
+	<div class="copyright-area" id="copyright-area">
+		<!--prep #include("file", "inc/copyright/index.php") prep-->
 	</div>
+	<!--prep #include("file", "inc/form-enter/form-enter.prep") prep-->
+	<!--prep #include("file", "inc/form-enter/form-reg.prep") prep-->
 </div>
 </body>
 </html>

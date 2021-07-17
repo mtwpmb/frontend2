@@ -1,0 +1,13 @@
+<!--prep name="radio-button-component"
+
+
+@radio-button-component($extclass, $extparams, $caption){
+<div class="radio-button $extclass;" onClick="rbClick(this)" $extparams;>
+<div class="rb-cyrcle">
+	<div class="rb-point"></div>
+</div>
+<div class="rb-caption">$caption;</div>
+</div>
+}
+
+prep-->

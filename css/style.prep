@@ -2,11 +2,16 @@
 output style.css 
 prep-->
 
-<!--prep include
-incfile("../fonts/css/all.css")
-incfile("index.css")
-incfile("../inc/header/style.css")
-incfile("../inc/footer/style.css")
-incfile("../inc/copyright/style.css")
-incfile("../lib/stdlib.css")
+<!--prep
+#include("file", "../fonts/css/all.css")
+#include("file", "index.css")
+#include("file", "../inc/home/home.css")
+#include("file", "../inc/header/header.css")
+#include("file", "../inc/footer/style.css")
+#include("file", "../inc/copyright/style.css")
+#include("file", "../inc/form-enter/form-enter.css")
+#include("file", "../inc/form-enter/form-reg.css")
+#include("file", "../lib/stdlib.css")
+
+#include("name", "components-css")
 prep-->

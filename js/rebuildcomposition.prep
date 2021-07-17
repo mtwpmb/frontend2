@@ -1,9 +1,9 @@
 
-<!--prep include incfile("../inc/header/header.js")  prep-->
+<!--prep #include("file", "../inc/header/header.js")  prep-->
 
-<!--prep include incfile("../inc/footer/footer.js")  prep-->
+<!--prep #include("file", "../inc/footer/footer.js") prep-->
 
-<!--prep include incfile("../inc/copyright/copyright.js")  prep-->
+<!--prep #include("file", "../inc/copyright/copyright.js") prep-->
 
 function RebuildComposition() {
 	var pagewidth = getPageWidth();

@@ -1,0 +1,52 @@
+<!--prep name="radio-style"
+
+$rb-base-size: 20px;
+$rb-base-padding: 3px;
+
+.radio-button {
+	display: table;
+	height: $rb-base-size ;
+}
+
+.radio-button .rb-cyrcle {
+	display: table-cell;
+	width: calc($rb-base-size; - 1px);
+}
+
+.radio-button .rb-caption {
+	display: table-cell;
+	padding-left: 9px;
+}
+
+.rb-cyrcle {
+	position: relative;
+	border-radius: 50%;
+	background: white;
+	border: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+.rb-point {
+	display: none;
+	position: absolute;
+	left: $rb-base-padding ;
+	top: $rb-base-padding ;
+	right: $rb-base-padding ;
+	bottom: $rb-base-padding ;
+	border-radius: 50%;
+}
+
+.rb-caption {
+	text-align: left;
+	vertical-align: middle;
+}
+
+.rb-checked .rb-cyrcle {
+	border: 1px solid #BC9CFF;
+}
+
+.rb-checked .rb-point {
+	display: block;
+	background: $components-base-gradient ;
+}
+
+prep-->

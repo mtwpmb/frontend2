@@ -1,5 +1,9 @@
 <!--prep output index.js  prep-->
 
-<!--prep include incfile("functions.js")  prep-->
+<!--prep #include("file", "functions.js") prep-->
 
-<!--prep include incfile("rebuildcomposition.prep")  prep-->
+<!--prep #include("file", "rebuildcomposition.prep") prep-->
+
+<!--prep #include("name", "components-js") prep-->
+
+<!--prep #include("name", "form-enter-js") prep-->

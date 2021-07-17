@@ -1,0 +1,145 @@
+.form-reg {
+	display: none;
+	position: absolute;
+	width: 380px;
+	height: 646px;
+	left: calc(50% - 190px);
+	top: calc(50% - 320px);
+	background: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+}
+
+.form-reg-caption {
+	position: absolute;
+	width: 320px;
+	height: 30px;
+	left: 30px;
+	top: 40px;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+	color: #1F2041;
+}
+
+.form-reg-name {
+	position: absolute;
+	width: 320px;
+	height: 30px;
+	left: 30px;
+	top: 90px;
+}
+
+.form-reg-surname {
+	position: absolute;
+	width: 320px;
+	height: 30px;
+	left: 30px;
+	top: 144px;
+}
+
+.form-reg-gender-selection {
+	position: absolute;
+	top: 198px;
+	left: 30px;
+	height: 21px;
+}
+
+.form-reg-gender-selection .form-reg-rb-male {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: inherit;
+	width: 120px;
+}
+
+.form-reg-gender-selection .form-reg-rb-female {
+	position: absolute;
+	top: 0;
+	left: 118px;
+	height: inherit;
+	width: 120px;
+}
+
+.form-reg-date-birth-caption {
+	position: absolute;
+	top: 242px;  
+	left: 30px;
+	width: 120px;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+	text-transform: uppercase;
+}
+
+.form-reg-date-birth {
+	position: absolute;
+	width: 320px;
+	height: 30px;
+	left: 30px;
+	top: 262px; 
+}
+
+.form-reg-login-caption {
+	position: absolute;
+	top: 326px;  
+	left: 30px;
+	width: 350px;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+	text-transform: uppercase;
+}
+
+.form-reg-login-email {
+	position: absolute;
+	width: 320px;
+	height: 30px;
+	left: 30px;
+	top: 346px;
+}
+
+.form-reg-login-pass {
+	position: absolute;
+	width: 320px;
+	height: 30px;
+	left: 30px;
+	top: 400px;
+}
+
+.form-reg-toggle {
+	left: 30px;
+	top: 454px;
+}
+
+.form-reg-button-payment {
+	position: absolute;
+	width: 318px;
+	left: 30px;
+	top: 498px;
+}
+
+.form-reg-button-payment {
+	width: 316px;
+}
+
+.form-reg-question {
+	position: absolute;
+	top: 584px;  
+	left: 30px;
+	width: 350px;
+	font-size: 14px;
+	line-height: 18px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+ 
+.form-reg-button-login {
+	position: absolute;
+	width: 102px;
+	left: 243px;
+	top: 572px; /* 564 */
+}

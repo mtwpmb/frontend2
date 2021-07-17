@@ -1,0 +1,12 @@
+<!--prep name="textbox-component"
+
+
+@textbox-component($extclass, $placeholder, $extparams){
+<input type="text" placeholder="$placeholder;" class="text-box $extclass;" $extparams;>
+}
+
+@password-component($extclass, $placeholder, $extparams){
+<input type="password" placeholder="$placeholder;" class="text-box $extclass;" $extparams;>
+}
+
+prep-->

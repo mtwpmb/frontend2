@@ -1,0 +1,188 @@
+
+/* header style */
+
+.topbar-menu {
+	position: absolute;
+	left: 36.80%;
+	top: 27px;
+}
+
+.topbar-menu span {
+	position: absolute;
+	top: 0;
+}
+
+.menu-about {
+	left: 0;
+	font-weight: bold;
+	width:43px;
+}
+
+.menu-services {
+	left: 63px; 
+}
+
+.menu-vacancies {
+	left: 157px;
+}
+
+.menu-news {
+	left: 249px;
+}
+
+.menu-agreements  {
+	left: 331px; 
+}
+
+.menu-login  {
+	position: absolute;
+	left: 466px;
+	top: -8px;
+}
+
+.panel-user-name {
+	display: none;
+	position: absolute;
+	left: 467px;
+	top: -6px;
+	height: 30px;
+	border-left: 1px solid rgba(31, 32, 65, 0.1);
+}
+
+.user-name {
+	position: absolute;
+	left: 21px;
+	width: 110px;
+	margin-top: 6px;
+}
+
+.button-border-position {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 83px;
+}
+
+.button-gradient-position {
+	position: absolute;
+	left: 107px;
+	top: -1px;
+	width: 192px;
+}
+
+.menu-login .button-border-position {
+	height: 30px;
+}
+
+.menu-login .button-gradient-position {
+	height: 30px;
+}
+
+.image-logo {
+	position: absolute;
+	width: 105.69px;
+	top: 15px;
+	left: 9.7%;
+}
+
+
+/* user login */
+.topbar-menu-login .topbar-menu {
+	left: 49.44%;
+}
+
+.topbar-menu-login .menu-login {
+	display: none;
+}
+
+.topbar-menu-login .panel-user-name {
+	display: block;
+}
+
+
+/* topbar-menu-tworows */
+.topbar-menu-tworows {
+	height: 110px;
+}
+
+.topbar-menu-tworows .topbar-menu {
+	left: calc(100% - 470px);
+}
+
+.topbar-menu-tworows .menu-login {
+	left: 142px;
+	top: 30px;
+}
+
+.topbar-menu-tworows .panel-user-name {
+	left: 0;
+	top: 30px;
+}
+
+/* topbar-menu-threerows */
+.topbar-menu-threerows {
+	height: 130px;
+}
+
+.topbar-menu-threerows .topbar-menu {
+	left: calc(100% - 250px);
+}
+
+.topbar-menu-threerows .menu-news {
+	left: 0;
+	top: 25px;
+}
+
+.topbar-menu-threerows .menu-agreements {
+	left: 82px;
+	top: 25px;
+}
+
+.topbar-menu-threerows .menu-login {
+	left: -70px;
+	top: 55px;
+}
+
+.topbar-menu-threerows .panel-user-name {
+	left: 0;
+	top: 49px;
+}
+
+.topbar-menu-threerows .image-logo {
+	left: 4%;
+}
+
+/* topbar-menu-fourrows */
+.topbar-menu-fourrows {
+	height: 175px;
+}
+
+.topbar-menu-fourrows .topbar-menu {
+	left: calc(50% - 110px);
+	top: 70px;
+}
+
+.topbar-menu-fourrows .menu-news {
+	left: 0;
+	top: 25px;
+}
+
+.topbar-menu-fourrows .menu-agreements {
+	left: 82px;
+	top: 25px;
+}
+
+.topbar-menu-fourrows .menu-login {
+	left: -35px;
+	top: 56px;
+}
+
+.topbar-menu-fourrows .panel-user-name {
+	left: 0;
+	top: 46px;
+}
+
+.topbar-menu-fourrows .image-logo {
+	left: calc(50% - 55px);
+}
+

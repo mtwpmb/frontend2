@@ -1,0 +1,13 @@
+<!--prep name="form-enter-js"
+
+function ShowFormEnter() {
+	document.getElementById("form-reg").style.display = "none";
+	document.getElementById("form-enter").style.display = "block";
+}
+
+function ShowFormReg() {
+	document.getElementById("form-enter").style.display = "none";
+	document.getElementById("form-reg").style.display = "block";
+}
+
+prep-->
